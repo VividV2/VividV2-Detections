@@ -1,0 +1,14 @@
+"methods": [
+  {
+    "namespace": "Photon.Pun",
+    "class": "PhotonNetwork",
+    "name": "SetMaster",
+    "severity": "Critical"
+  },
+  {
+    "namespace": "Photon.Pun",
+    "class": "PhotonNetwork",
+    "name": "FindFriends",
+    "severity": "High"
+  }
+]
