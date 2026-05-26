@@ -14,7 +14,7 @@
   {
     "namespace": "Photon.Pun",
     "class": "PhotonNetwork",
-    "name": "RaiseEvent"
-    "severity": "Low",
+    "name": "RaiseEvent",
+    "severity": "Low"
   }
 ]
