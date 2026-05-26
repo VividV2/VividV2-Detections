@@ -1,20 +1,25 @@
-"methods": [
-  {
-    "namespace": "Photon.Pun",
-    "class": "PhotonNetwork",
-    "name": "SetMaster",
-    "severity": "Critical"
-  },
-  {
-    "namespace": "Photon.Pun",
-    "class": "PhotonNetwork",
-    "name": "FindFriends",
-    "severity": "High"
-  },
-  {
-    "namespace": "Photon.Pun",
-    "class": "PhotonNetwork",
-    "name": "RaiseEvent",
-    "severity": "Low"
-  }
-]
+{
+  "methods": [
+    {
+      "namespace": "Photon.Pun",
+      "class": "PhotonNetwork",
+      "name": "SetMaster",
+      "severity": "Critical",
+      "message": "Instant Ban"
+    },
+    {
+      "namespace": "Photon.Pun",
+      "class": "PhotonNetwork",
+      "name": "FindFriends",
+      "severity": "High",
+      "message": "Bannable (I Think)"
+    },
+    {
+      "namespace": "Photon.Pun",
+      "class": "PhotonNetwork",
+      "name": "RaiseEvent",
+      "severity": "Low",
+      "message": "Possibly Detected"
+    }
+  ]
+}
