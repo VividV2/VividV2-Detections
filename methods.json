@@ -3,7 +3,7 @@
     {
       "namespace": "Photon.Pun",
       "class": "PhotonNetwork",
-      "name": "SetMaster",
+      "name": "SetMasterClient",
       "severity": "Critical",
       "message": "Instant ban"
     },
@@ -40,16 +40,16 @@
     {
       "namespace": "System.IO",
       "class": "File",
-      "name": "WriteAllBytes",
-      "severity": "High",
+      "name": "WriteAllText",
+      "severity": "Medium",
       "message": "File write"
     },
     {
       "namespace": "System.IO",
       "class": "File",
-      "name": "WriteAllText",
-      "severity": "Medium",
-      "message": "Text write"
+      "name": "WriteAllBytes",
+      "severity": "High",
+      "message": "Binary write"
     },
     {
       "namespace": "System.IO",
@@ -65,13 +65,6 @@
       "name": "Load",
       "severity": "Critical",
       "message": "Assembly load"
-    },
-    {
-      "namespace": "System.Reflection",
-      "class": "Assembly",
-      "name": "LoadFrom",
-      "severity": "High",
-      "message": "External load"
     },
 
     {
@@ -103,28 +96,93 @@
       "severity": "High",
       "message": "Download file"
     },
+    {
+      "namespace": "System.Net",
+      "class": "WebClient",
+      "name": "UploadString",
+      "severity": "High",
+      "message": "Upload data"
+    },
+
+    {
+      "namespace": "UnityEngine.Networking",
+      "class": "UnityWebRequest",
+      "name": "Get",
+      "severity": "Medium",
+      "message": "Unity web GET"
+    },
+    {
+      "namespace": "UnityEngine.Networking",
+      "class": "UnityWebRequest",
+      "name": "Post",
+      "severity": "Medium",
+      "message": "Unity web POST"
+    },
+    {
+      "namespace": "UnityEngine.Networking",
+      "class": "UnityWebRequest",
+      "name": "Put",
+      "severity": "Medium",
+      "message": "Unity web PUT"
+    },
+    {
+      "namespace": "UnityEngine.Networking",
+      "class": "UnityWebRequest",
+      "name": "Head",
+      "severity": "Low",
+      "message": "Unity web HEAD"
+    },
+    {
+      "namespace": "UnityEngine.Networking",
+      "class": "UnityWebRequest",
+      "name": "Delete",
+      "severity": "Medium",
+      "message": "Unity web DELETE"
+    },
+
+    {
+      "namespace": "System.Net.Sockets",
+      "class": "TcpClient",
+      "name": "Connect",
+      "severity": "High",
+      "message": "TCP connection"
+    },
+    {
+      "namespace": "System.Net.Sockets",
+      "class": "Socket",
+      "name": "Connect",
+      "severity": "High",
+      "message": "Socket connection"
+    },
 
     {
       "namespace": "System.Runtime.InteropServices",
       "class": "Marshal",
-      "name": "GetDelegateForFunctionPointer",
-      "severity": "Critical",
-      "message": "Interop hook"
+      "name": "AllocHGlobal",
+      "severity": "High",
+      "message": "Memory allocation"
     },
     {
       "namespace": "System.Runtime.InteropServices",
       "class": "Marshal",
-      "name": "WriteIntPtr",
+      "name": "WriteInt32",
       "severity": "High",
       "message": "Memory write"
     },
+    {
+      "namespace": "System.Runtime.InteropServices",
+      "class": "Marshal",
+      "name": "FreeHGlobal",
+      "severity": "High",
+      "message": "Memory free"
+    },
 
     {
-      "namespace": "System.Environment",
+      "namespace": "System",
       "class": "Environment",
       "name": "Exit",
       "severity": "Low",
-      "message": "Exit app"
+      "message": "App exit"
     }
   ]
 }
