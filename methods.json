@@ -5,21 +5,126 @@
       "class": "PhotonNetwork",
       "name": "SetMaster",
       "severity": "Critical",
-      "message": "Instant Ban"
+      "message": "Instant ban"
     },
     {
       "namespace": "Photon.Pun",
       "class": "PhotonNetwork",
       "name": "FindFriends",
       "severity": "High",
-      "message": "Bannable (I Think)"
+      "message": "Suspicious"
     },
     {
       "namespace": "Photon.Pun",
       "class": "PhotonNetwork",
       "name": "RaiseEvent",
       "severity": "Low",
-      "message": "Possibly Detected"
+      "message": "Detected"
+    },
+
+    {
+      "namespace": "System.Diagnostics",
+      "class": "Process",
+      "name": "Start",
+      "severity": "High",
+      "message": "Process spawn"
+    },
+    {
+      "namespace": "System.Diagnostics",
+      "class": "Process",
+      "name": "GetProcesses",
+      "severity": "Medium",
+      "message": "Process scan"
+    },
+
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "WriteAllBytes",
+      "severity": "High",
+      "message": "File write"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "WriteAllText",
+      "severity": "Medium",
+      "message": "Text write"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "Delete",
+      "severity": "Medium",
+      "message": "File delete"
+    },
+
+    {
+      "namespace": "System.Reflection",
+      "class": "Assembly",
+      "name": "Load",
+      "severity": "Critical",
+      "message": "Assembly load"
+    },
+    {
+      "namespace": "System.Reflection",
+      "class": "Assembly",
+      "name": "LoadFrom",
+      "severity": "High",
+      "message": "External load"
+    },
+
+    {
+      "namespace": "System.Net.Http",
+      "class": "HttpClient",
+      "name": "GetAsync",
+      "severity": "Medium",
+      "message": "Web request"
+    },
+    {
+      "namespace": "System.Net.Http",
+      "class": "HttpClient",
+      "name": "PostAsync",
+      "severity": "High",
+      "message": "Data send"
+    },
+
+    {
+      "namespace": "System.Net",
+      "class": "WebClient",
+      "name": "DownloadString",
+      "severity": "High",
+      "message": "Download string"
+    },
+    {
+      "namespace": "System.Net",
+      "class": "WebClient",
+      "name": "DownloadFile",
+      "severity": "High",
+      "message": "Download file"
+    },
+
+    {
+      "namespace": "System.Runtime.InteropServices",
+      "class": "Marshal",
+      "name": "GetDelegateForFunctionPointer",
+      "severity": "Critical",
+      "message": "Interop hook"
+    },
+    {
+      "namespace": "System.Runtime.InteropServices",
+      "class": "Marshal",
+      "name": "WriteIntPtr",
+      "severity": "High",
+      "message": "Memory write"
+    },
+
+    {
+      "namespace": "System.Environment",
+      "class": "Environment",
+      "name": "Exit",
+      "severity": "Low",
+      "message": "Exit app"
     }
   ]
 }
