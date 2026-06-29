@@ -36,6 +36,20 @@
       "severity": "Medium",
       "message": "Process scan"
     },
+    {
+      "namespace": "System.Diagnostics",
+      "class": "Process",
+      "name": "Kill",
+      "severity": "High",
+      "message": "Process termination attempt"
+    },
+    {
+      "namespace": "System.Diagnostics",
+      "class": "Process",
+      "name": "get_Handle",
+      "severity": "High",
+      "message": "Direct process handle retrieval"
+    },
 
     {
       "namespace": "System.IO",
@@ -49,7 +63,7 @@
       "class": "File",
       "name": "WriteAllBytes",
       "severity": "High",
-      "message": "Binary write"
+      "message": "Binary file write"
     },
     {
       "namespace": "System.IO",
@@ -58,13 +72,84 @@
       "severity": "Medium",
       "message": "File delete"
     },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "Copy",
+      "severity": "Medium",
+      "message": "File replication/copy"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "Move",
+      "severity": "Medium",
+      "message": "File relocation"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "Exists",
+      "severity": "Low",
+      "message": "File probing"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "Directory",
+      "name": "Delete",
+      "severity": "High",
+      "message": "Directory destruction"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "Directory",
+      "name": "GetFiles",
+      "severity": "Medium",
+      "message": "Directory enumeration"
+    },
+
+    {
+      "namespace": "Microsoft.Win32",
+      "class": "Registry",
+      "name": "SetValue",
+      "severity": "Critical",
+      "message": "Global registry modification"
+    },
+    {
+      "namespace": "Microsoft.Win32",
+      "class": "RegistryKey",
+      "name": "SetValue",
+      "severity": "Critical",
+      "message": "Registry value modification"
+    },
+    {
+      "namespace": "Microsoft.Win32",
+      "class": "RegistryKey",
+      "name": "CreateSubKey",
+      "severity": "High",
+      "message": "Registry key creation"
+    },
+    {
+      "namespace": "Microsoft.Win32",
+      "class": "RegistryKey",
+      "name": "DeleteSubKey",
+      "severity": "Critical",
+      "message": "Registry key deletion"
+    },
 
     {
       "namespace": "System.Reflection",
       "class": "Assembly",
       "name": "Load",
       "severity": "Critical",
-      "message": "Assembly load"
+      "message": "In-memory assembly load"
+    },
+    {
+      "namespace": "System.Reflection",
+      "class": "Assembly",
+      "name": "LoadFrom",
+      "severity": "Critical",
+      "message": "External assembly load"
     },
 
     {
@@ -76,7 +161,7 @@
     },
     {
       "namespace": "System.Net.Http",
-      "class": "HttpClient",
+      "class": "PostAsync",
       "name": "PostAsync",
       "severity": "High",
       "message": "Data send"
@@ -87,21 +172,21 @@
       "class": "WebClient",
       "name": "DownloadString",
       "severity": "High",
-      "message": "Download string"
+      "message": "Download payload string"
     },
     {
       "namespace": "System.Net",
       "class": "WebClient",
       "name": "DownloadFile",
       "severity": "High",
-      "message": "Download file"
+      "message": "Download payload file"
     },
     {
       "namespace": "System.Net",
       "class": "WebClient",
       "name": "UploadString",
       "severity": "High",
-      "message": "Upload data"
+      "message": "Data exfiltration string"
     },
 
     {
@@ -160,14 +245,21 @@
       "class": "Marshal",
       "name": "AllocHGlobal",
       "severity": "High",
-      "message": "Memory allocation"
+      "message": "Unmanaged memory allocation"
     },
     {
       "namespace": "System.Runtime.InteropServices",
       "class": "Marshal",
       "name": "WriteInt32",
       "severity": "High",
-      "message": "Memory write"
+      "message": "Unmanaged memory write"
+    },
+    {
+      "namespace": "System.Runtime.InteropServices",
+      "class": "Marshal",
+      "name": "Copy",
+      "severity": "High",
+      "message": "Managed/Unmanaged memory copy transfer"
     },
     {
       "namespace": "System.Runtime.InteropServices",
@@ -183,6 +275,13 @@
       "name": "Exit",
       "severity": "Low",
       "message": "App exit"
+    },
+    {
+      "namespace": "System",
+      "class": "Environment",
+      "name": "GetEnvironmentVariable",
+      "severity": "Low",
+      "message": "System environment discovery"
     }
   ]
 }
