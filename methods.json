@@ -157,14 +157,14 @@
       "class": "HttpClient",
       "name": "GetAsync",
       "severity": "Medium",
-      "message": "Web request"
+      "message": "Web request (HttpClient)"
     },
     {
       "namespace": "System.Net.Http",
-      "class": "PostAsync",
+      "class": "HttpClient",
       "name": "PostAsync",
       "severity": "High",
-      "message": "Data send"
+      "message": "Data send (HttpClient)"
     },
 
     {
@@ -282,6 +282,97 @@
       "name": "GetEnvironmentVariable",
       "severity": "Low",
       "message": "System environment discovery"
+    },
+    {
+      "namespace": "UnityEngine.Networking",
+      "class": "UnityWebRequest",
+      "name": "SendWebRequest",
+      "severity": "High",
+      "message": "Unity web traffic execution (Catch-all)"
+    },
+    {
+      "namespace": "System.Net.Http",
+      "class": "HttpClient",
+      "name": "SendAsync",
+      "severity": "High",
+      "message": "Generic HTTP request dispatch bypass"
+    },
+    {
+      "namespace": "System.Net",
+      "class": "WebRequest",
+      "name": "Create",
+      "severity": "High",
+      "message": "Legacy WebRequest instantiation"
+    },
+    {
+      "namespace": "System.Net",
+      "class": "HttpListener",
+      "name": "Start",
+      "severity": "Critical",
+      "message": "Local web server started (Potential backdoor)"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "FileStream",
+      "name": ".ctor",
+      "severity": "High",
+      "message": "Raw file stream opened (Write/Create bypass)"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "Open",
+      "severity": "High",
+      "message": "Alternative direct file handle open"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "File",
+      "name": "Create",
+      "severity": "High",
+      "message": "Alternative direct file creation"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "FileInfo",
+      "name": "Delete",
+      "severity": "Medium",
+      "message": "Instance-based file deletion"
+    },
+    {
+      "namespace": "System.IO",
+      "class": "DirectoryInfo",
+      "name": "Delete",
+      "severity": "High",
+      "message": "Instance-based directory deletion"
+    },
+    {
+      "namespace": "UnityEngine",
+      "class": "PlayerPrefs",
+      "name": "SetString",
+      "severity": "Medium",
+      "message": "Unity local data/registry state modification"
+    },
+    {
+      "namespace": "UnityEngine",
+      "class": "PlayerPrefs",
+      "name": "DeleteAll",
+      "severity": "High",
+      "message": "Unity local data wipe"
+    },
+    {
+      "namespace": "System.Runtime.InteropServices",
+      "class": "Marshal",
+      "name": "GetDelegateForFunctionPointer",
+      "severity": "Critical",
+      "message": "Native function pointer execution (Shellcode execution risk)"
+    },
+    {
+      "namespace": "System.Threading",
+      "class": "Thread",
+      "name": "Start",
+      "severity": "Medium",
+      "message": "Background thread worker execution"
     }
   ]
 }
